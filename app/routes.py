@@ -8,7 +8,7 @@ import requests, json, random
 @app.route('/index')
 def home():
 	return render_template('index.html',title='LESSON')
-	
+
 @app.route('/image',methods=['POST','GET'])
 def rest_image():
 	this_query = request.args['query']
